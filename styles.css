@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;700&display=swap');
+body {
+  background-color: #2d3139;
+  padding: 1px;
+  font-family: 'Franklin Gothic Heavy', sans-serif;
+}
+/* Navbar transparan */
+.navbar {
+  background-color: rgba(34, 40, 49, 0.7); /* Transparansi dasar */
+  padding: 20px 0; /* Memberikan ruang pada konten */
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* Item navbar */
+.nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 8px 1px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover dan active state */
+.nav-link:hover,
+.nav-link.active {
+  color: #1e90ff; /* Warna biru saat hover atau aktif */
+  background-color: rgba(255, 255, 255, 0.1); /* Latar belakang transparan */
+  border-radius: 3px; /* Membuat sudut item sedikit melengkung */
+}
+/* Bayangan dasar hitam muda */
+.navbar img {
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan dasar */
+}
+
+/* Bayangan biru hanya saat di-hover */
+.navbar img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 162, 255, 0.5); /* Bayangan biru hanya di-hover */
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-color: #373a40;
+  padding-top: 8rem;
+  color: white;
+}
+.jumbotron img {
+  width: 200px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 162, 255, 0.5);
+}
+/* Section About */
+#about {
+  background-color: #222831;
+  padding-top: 6rem;
+}
+
+/* Section Project */
+.project {
+  background-color: #373a40;
+  padding-top: 6rem;
+}
+
+.card {
+  background-color: #2d3139;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(45, 49, 57, 0.5); /* Warna #2d3139 dengan transparansi 0.5 */
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px; /* Jarak bawah antar card */
+  max-width: 280px; /* Ubah lebar maksimal card sesuai kebutuhan */
+  margin: auto; /* Center card secara horizontal */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 180px; /* Sesuaikan tinggi gambar jika perlu */
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card p {
+  font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 162, 255, 0.5); /* Ubah warna shadow saat hover menjadi biru terang */
+}
+
+/* Responsive Grid Layout */
+@media (min-width: 768px) {
+  .project .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project .col-md-4 {
+    flex: 1 0 30%; /* Menyesuaikan lebar card pada layar sedang ke atas */
+    max-width: 30%;
+    margin: 10px; /* Jarak antar card */
+  }
+}
+
+/* Section Contact */
+#contact {
+  background-color: #222831;
+  padding-top: 40px; /* Sesuaikan dengan tinggi navbar */
+  scroll-margin-top: 80px; /* Sesuaikan dengan tinggi navbar */
+}
+
+/* Section Footer */
+#footer {
+  background-color: #373a40;
+  text-align: center;
+}
